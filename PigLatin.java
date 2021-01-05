@@ -1,7 +1,7 @@
 import java.util.*;
 public class PigLatin {
   public static void main(String[] args) {
-
+    /*
     System.out.println(pigLatinSimple("mock")); //ockmay
     System.out.println(pigLatinSimple("pie")); //iepay
     System.out.println(pigLatinSimple("david")); //avidday
@@ -21,7 +21,19 @@ public class PigLatin {
     System.out.println(pigLatinBest("cat!")); //atcay!
     System.out.println(pigLatinBest("amazing?")); //amazinghay?
     System.out.println(pigLatinBest("apple%")); //applehay%
+    */
 
+    Scanner n = new Scanner(System.in);
+    while (n.hasNextLine()) {
+      String l = n.nextLine();
+      Scanner scanl = new Scanner(l);
+      while (scanl.hasNext()) {
+        String s = scanl.next();
+        System.out.print(pigLatinBest(s));
+        System.out.print(" ");
+      }
+      if (n.hasNextLine()) System.out.println();
+    }
   }
 
   public static String pigLatinSimple(String s) {
