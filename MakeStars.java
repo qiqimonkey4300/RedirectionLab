@@ -7,8 +7,12 @@ public class MakeStars {
       Scanner scanl = new Scanner(l);
       while (scanl.hasNext()) {
         String s = scanl.next();
-        System.out.println(s);
+        for (int i = 0; i < s.length(); i++) {
+          System.out.print("*");
+        }
+        System.out.print(" ");
       }
+      if (n.hasNextLine()) System.out.println();
     }
   }
 }
